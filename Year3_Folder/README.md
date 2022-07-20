@@ -1,4 +1,4 @@
-#Year 2 Projects
+#Year 3 Projects
 1. -  Saocialite Project
    - 1.1.1 - Module: Group Project (2021/2022)
    - 1.1.2 - Group Size: 4 members
