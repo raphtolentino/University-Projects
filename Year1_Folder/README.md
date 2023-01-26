@@ -1,16 +1,25 @@
-#Year 1 Projects
-1. -  MBED Project
-   - 1.1.1 - Module: People and Computing (2019/2020) 
-   - 1.1.2 - Group Size: 4 members
-   
-1.2 Website Technical Details:
- -  1.2.1 Frontend Languages used: Java
+# University Projects
 
-2. - PetStore Project
-  -   2.1.1 - Module: Further Object-Oriented Programming (2019/2020) 
- 
-2.2: Project Technical Details:
--   2.2.1 Used Languages: Java
+## Description
 
-3. Reversi Project
+Repo with all my Uni lectures and projects
 
+## Table of Content
+
+### Year 1 - [#Year1](https://github.com/raphtolentino/University-Projects/tree/main/Year1_Folder)
+
+This is most of my projects coded during my first year of University.
+
+Oct 2019 - July 2020
+
+### Completed Projects
+
+>- Mbed - [#Mbed]
+
+This project was to code a small program on the MBED board.
+
+### Incomplete Projects
+
+> - Reversi 
+
+> - Pet Store
