@@ -18,6 +18,8 @@ Oct 2019 - July 2020
 
 >- Mbed - [#Mbed]
 
+> - Teaching Project
+
 This project was to code a small program on the MBED board.
 
 ### Incomplete Projects
@@ -25,6 +27,7 @@ This project was to code a small program on the MBED board.
 > - Reversi 
 
 > - Pet Store
+
 
 ## Year 2 - [ #Year2](https://github.com/raphtolentino/University-Projects/tree/main/Year2_Folder)
 
