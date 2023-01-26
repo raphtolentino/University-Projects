@@ -20,6 +20,8 @@ Oct 2019 - July 2020
 
 > - Teaching Project
 
+> - Research Project
+
 This project was to code a small program on the MBED board.
 
 ### Incomplete Projects
