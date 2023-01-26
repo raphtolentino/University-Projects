@@ -42,7 +42,7 @@ Oct 2020 - July 2021
 
 > - Microblog
 
-## Year 3[#Year3](https://github.com/raphtolentino/University-Projects/tree/main/Year3_Folder}
+## Year 3[#Year3](https://github.com/raphtolentino/University-Projects/tree/main/Year3_Folder)
 
 This is all projects coded during my third year of University.
 
