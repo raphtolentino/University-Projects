@@ -1,19 +1,25 @@
-# University-Projects
+# University Projects
 
-# Year 1
+## Description
 
-- Reversi Project.
-- PetStore Project.
-- MBED Project.
+Repo with all my Uni lectures and projects
 
-# Year 2
+## Table of Content
 
-- Generic Burger Place Website Project
-- Garder simulator
+> - Year 1 - [#Year1](https://github.com/raphtolentino/University-Projects)
 
-# Year 3
+This is most of my projects coded during my first year of University.
 
-- Socialite Android Software.
-- Heath-care Research Project.
-- Twitter-bot.
+Oct 2019 - July 2020
 
+> - Mbed
+
+This project was to code a program on the MBED board.
+
+# Completed
+
+> - Pet Store
+
+This project was to code a pet shop simulator
+
+# Incomplete
