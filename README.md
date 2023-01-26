@@ -4,7 +4,7 @@
 
 Repo with all my Uni projects saved in May 2022.
 
-Older projects prior to July 2021 are incomplete or missing the submitted version as I lost the correct file version or the University lost its original files.
+Older projects prior to July 2022 are incomplete or missing the submitted version as I lost the correct file version or the University lost its original files.
 
 ## Table of Content
 
