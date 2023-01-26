@@ -26,7 +26,7 @@ This project was to code a small program on the MBED board.
 
 > - Pet Store
 
-## Year 2[ #Year2](https://github.com/raphtolentino/University-Projects/tree/main/Year2_Folder)
+## Year 2 - [ #Year2](https://github.com/raphtolentino/University-Projects/tree/main/Year2_Folder)
 
 This is most of my projects coded during my second year of University.
 
@@ -42,7 +42,7 @@ Oct 2020 - July 2021
 
 > - Microblog
 
-## Year 3[ #Year3](https://github.com/raphtolentino/University-Projects/tree/main/Year3_Folder)
+## Year 3 - [ #Year3](https://github.com/raphtolentino/University-Projects/tree/main/Year3_Folder)
 
 This is all projects coded during my third year of University.
 
