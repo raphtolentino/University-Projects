@@ -2,7 +2,7 @@
 
 ## Description
 
-Repo with all my Uni lectures and projects
+Repo with all my Uni projects
 
 ## Table of Content
 
