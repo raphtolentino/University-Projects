@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Instructor
+comment0.text=\r\n\ The\ Instructor\ class\ represents\ instructors\ of\ the\ club\ \r\n\ It\ holds\ relevant\ details\ of\ an\ instructor.\r\n\ \r\n\ @author\ Yang\ He\r\n\ @version\ Oct\ 2019\r\n
+comment1.params=sid\ name\ gender
+comment1.target=Instructor(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Create\ a\ new\ instructor\ with\ a\ given\ ID,\ name\ and\ gender.\r\n\ \r\n\ @param\ \ sid\ \ \ \ \ Instructor\ id\r\n\ @param\ \ name\ \ \ \ Instructor\ name\r\n\ @param\ \ isMale\ \ Instructor's\ gender\r\n
+comment2.params=
+comment2.target=void\ print()
+comment2.text=\r\n\ Print\ the\ details\ of\ the\ instructor\r\n
+numComments=3

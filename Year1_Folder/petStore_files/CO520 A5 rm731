@@ -1,0 +1,104 @@
+Name: Raphael M. Tolentino
+login details: rm731
+
+Question 1
+
+import java.util.*;
+/**
+ * A subclass of abstract Pet class
+ * 
+ * @author (Raphael M. Tolentino)
+ * @version (version 0.1)
+ */
+public class Cat extends Pet
+{
+    private int age; 
+    private String name;
+
+    public Cat(String name, int age)
+    {
+        super(name);
+        this.age = age;
+        this.name = name;
+        
+        if(age < 0) {
+            age = 0;
+        }
+    }
+    
+    public int getAge()
+    {
+        return age;
+    }
+    
+    public String toString()
+    {
+        return super.toString() + ", Age: " + getAge();
+    }
+    
+    public void sound()
+        {
+            System.out.println("Miaow");
+        }
+}
+
+
+Question 2
+
+import java.util.*;
+/**
+ * A petshop
+ * 
+ * @author (Raphael M. Tolentino)
+ * @version (version 0.1)
+ */
+public class PetShop
+{
+    private ArrayList<Pet> petList;
+
+    public PetShop()
+    {
+        petList = new ArrayList<>();
+    }
+
+    public void PrintPetList()
+    {
+        System.out.println(petList);
+    }
+}
+
+
+Question 3
+
+public interface Range
+{
+ void setLimits(int a, int b);
+ int getNumber();
+}
+
+import.java.util.*; 
+
+public abstract class RandomInteger implements Range
+{      
+    private int low;
+    private int high;
+    public RandomInteger(int low, int high) {   
+        this.low = low;
+        this.high = high;
+
+    }
+
+    public void setLimits(int a, int b)
+    {       
+        low = a;
+        high = b;
+
+    }  
+    
+    public int getNumber()
+    {
+        return new Random().nextInt(low - high + 1) + low;
+        
+    }
+    
+}

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Member
+comment0.text=\r\n\ The\ Member\ class\ represents\ a\ member\ at\ a\ local\ club.\r\n\ It\ holds\ relevant\ details\ of\ a\ member.\r\n\ \r\n\ @author\ \ \ Your\ name\ and\ login\r\n\ @version\ \ Date\ when\ it's\ last\ updated\r\n
+comment1.params=mid\ name\ isMale
+comment1.target=Member(java.lang.String,\ java.lang.String,\ boolean)
+comment1.text=\r\n\ Create\ a\ new\ member\ with\ a\ given\ ID,\ name\ and\ gender\ info.\ \r\n\ \r\n\ @param\ \ mid\ \ \ \ \ A\ member\ ID\r\n\ @param\ \ name\ \ \ \ A\ member\ name\r\n\ @param\ \ isMale\ \ A\ member\ is\ male\ or\ not\r\n
+comment2.params=
+comment2.target=java.lang.String\ getMID()
+comment2.text=\r\n\ Get\ the\ member\ ID\ of\ this\ member\r\n\ \r\n\ @return\ the\ member\ ID\ of\ this\ member.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Get\ \ the\ name\ of\ this\ member.\r\n\ \r\n\ @return\ \ the\ name\ of\ this\ member.\r\n
+comment4.params=name
+comment4.target=void\ setName(java.lang.String)
+comment4.text=\r\n\ Set\ a\ new\ name\ for\ this\ member.\r\n\ \r\n\ @param\ name\ \ A\ new\ name\ for\ this\ member\r\n
+comment5.params=
+comment5.target=java.lang.String\ getGender()
+comment5.text=\r\n\ Get\ the\ gender\ of\ the\ member,\ i.e.\ "Male"\ or\ "Female"\r\n\ \r\n\ @return\ The\ String\ "Male"\ if\ the\ member\ is\ male,\ \r\n\ \ \ \ \ \ \ \ \ otherwise\ "Female".\r\n
+comment6.params=
+comment6.target=void\ print()
+comment6.text=\r\n\ Print\ the\ member's\ details,\ \r\n\ i.e.\ id,\ name,\ gender\ and\ a\ list\ of\ activities,\r\n\ to\ the\ output\ terminal.\ \r\n
+comment7.params=myActivity
+comment7.target=void\ registerOnActivity(Activity)
+comment7.text=\r\n\ Register\ on\ a\ given\ activity.\ \ \r\n\ \r\n\ @param\ myActivity\ \ An\ object\ of\ Activity\r\n
+numComments=8
