@@ -1,62 +1,41 @@
-# University Projects
+# University of Kent Computing Projects
 
-## Description
+## Overview
+This repository contains selected projects completed during my Bachelor of Science (Hons) in Computing at the University of Kent (2019-2022). These projects demonstrate my technical skills, problem-solving abilities, and academic knowledge in various computing domains.
 
-Repo with all my Uni projects saved in May 2022.
+## Featured Projects
 
-Older projects prior to July 2022 are incomplete or missing the submitted version as I lost the correct file version or the University lost its original files.
+### [Cryptology Project](/cryptology-project)
+Implementation of cipher analysis tools for decrypting Caesar, Vigenère, and Transposition ciphers without prior knowledge of cryptographic techniques. Achieved high marks for innovative approaches to frequency analysis.
 
-## Table of Content
+### [Software Engineering Project](/software-engineering)
+Team-based development of a [brief description of project]. Focused on software development lifecycle, agile methodologies, and collaborative coding practices.
 
-## Year 1 - [ #Year1](https://github.com/raphtolentino/University-Projects/tree/main/Year1_Folder)
+### [Database Systems Project](/database-project)
+Design and implementation of a relational database system for [purpose]. Demonstrates SQL proficiency, database normalization, and query optimization.
 
-This is most of my projects coded during my first year of University.
+### [Web Development Project](/web-development)
+Creation of a responsive web application using [technologies]. Features user authentication, data persistence, and modern front-end techniques.
 
-Oct 2019 - July 2020
+## Skills Demonstrated
 
-### Completed Projects
+- **Programming Languages**: Python, Java, JavaScript, SQL
+- **Software Development**: Object-oriented design, testing methodologies, version control
+- **Database Technologies**: MySQL, database design, normalization
+- **Web Technologies**: HTML5, CSS3, JavaScript frameworks
+- **Security Concepts**: Cryptography, secure coding practices
 
->- Mbed - [#Mbed]
+## Academic Context
+These projects were completed as part of my BSc Computing degree, which covered fundamental computing principles, software development, systems analysis, and specialized topics in cybersecurity and data management.
 
-> - Teaching Project
+## Repository Structure
+Each project is contained in its own directory with:
+- Detailed README explaining the project
+- Source code with documentation
+- Sample outputs where applicable
+- Academic learning outcomes
 
-> - Research Project
-
-This project was to code a small program on the MBED board.
-
-### Incomplete Projects
-
-> - Reversi 
-
-> - Pet Store
-
-
-## Year 2 - [ #Year2](https://github.com/raphtolentino/University-Projects/tree/main/Year2_Folder)
-
-This is most of my projects coded during my second year of University.
-
-Oct 2020 - July 2021
-
-### Completed Projects
-
->- Garden Simulator
-
->- Generic Burger Project 
-
-### Incomplete Projects
-
-> - Microblog
-
-## Year 3 - [ #Year3](https://github.com/raphtolentino/University-Projects/tree/main/Year3_Folder)
-
-This is all projects coded during my third year of University.
-
-Oct 2021 - July 2022
-
-### Completed Projects
-
->- Health care report project
-
->- Socialite project
-
-> - Twitter Bot
+## Contact
+For questions about these projects:
+- Email: soulpm3@gmail.com
+- LinkedIn: [linkedin.com/in/raphtolentino](https://linkedin.com/in/raphtolentino)
