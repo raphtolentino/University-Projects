@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hamburger order</title>
+<script type="text/javascript">
+function hideInformation() {
+ var elements = document.body.children;
+ var numberElements = elements.length;
+ while(numberElements > 0) {
+    elements[0].remove();
+	numberElements--;
+ }
+ var heading = document.createElement("h1");
+ heading.innerHTML = "Hamburger";
+ var paragraph1 = document.createElement("p");
+ paragraph1.innerHTML = "Select the options that you prefer (Beef is compulsory ingredient and so does not appear):";
+ document.body.appendChild(heading);
+ document.body.appendChild(paragraph1);
+ 
+ var paragraph2 = document.createElement("p");
+ paragraph2.innerHTML = "Type of bun:";
+ var optionBun1 = document.createElement("input");
+ optionBun1.setAttribute("class", "bunOption1");
+ optionBun1.setAttribute("type", "radio");
+ optionBun1.setAttribute("name", "bunType");
+ optionBun1.setAttribute("checked", "true");
+ var bunLabel1 = document.createElement("label");
+ bunLabel1.setAttribute("class", "bunOption1");
+ bunLabel1.innerHTML = "Sesame seeds";
+ var optionBun2 = document.createElement("input");
+ optionBun2.setAttribute("class", "bunOption2");
+ optionBun2.setAttribute("type", "radio");
+ optionBun2.setAttribute("name", "bunType");
+ var bunLabel2 = document.createElement("label");
+ bunLabel2.setAttribute("class", "bunOption2");
+ bunLabel2.innerHTML = "Plain";
+ var optionBun3 = document.createElement("input");
+ optionBun3.setAttribute("class", "bunOption3");
+ optionBun3.setAttribute("type", "radio");
+ optionBun3.setAttribute("name", "bunType");
+ var bunLabel3 = document.createElement("label");
+ bunLabel3.setAttribute("class", "bunOption3");
+ bunLabel3.innerHTML = "Brioche";
+ document.body.appendChild(paragraph2);
+ document.body.appendChild(optionBun1);
+ document.body.appendChild(bunLabel1);
+ document.body.appendChild(optionBun2);
+ document.body.appendChild(bunLabel2);
+ document.body.appendChild(optionBun3);
+ document.body.appendChild(bunLabel3);
+ 
+ var paragraph3 = document.createElement("p");
+ paragraph3.innerHTML = "Vegetables:";
+ var optionVegetable1 = document.createElement("input");
+ optionVegetable1.setAttribute("class", "vegOption1");
+ optionVegetable1.setAttribute("type", "checkbox");
+ optionVegetable1.setAttribute("checked", "true");
+ var vegetableLabel1 = document.createElement("label");
+ vegetableLabel1.setAttribute("class", "vegOption1");
+ vegetableLabel1.innerHTML = "Lettuce (Optional)";
+ var optionVegetable2 = document.createElement("input");
+ optionVegetable2.setAttribute("class", "vegOption2");
+ optionVegetable2.setAttribute("type", "checkbox");
+ optionVegetable2.setAttribute("checked", "true");
+ var vegetableLabel2 = document.createElement("label");
+ vegetableLabel2.setAttribute("class", "vegOption2");
+ vegetableLabel2.innerHTML = "Tomato (Optional)";
+ var optionVegetable3 = document.createElement("input");
+ optionVegetable3.setAttribute("class", "vegOption3");
+ optionVegetable3.setAttribute("type", "checkbox");
+ optionVegetable3.setAttribute("checked", "true");
+ var vegetableLabel3 = document.createElement("label");
+ vegetableLabel3.setAttribute("class", "vegOption3");
+ vegetableLabel3.innerHTML = "Onions (Optional)";
+ document.body.appendChild(paragraph3);
+ document.body.appendChild(optionVegetable1);
+ document.body.appendChild(vegetableLabel1);
+ document.body.appendChild(optionVegetable2);
+ document.body.appendChild(vegetableLabel2);
+ document.body.appendChild(optionVegetable3);
+ document.body.appendChild(vegetableLabel3);
+ 
+ var paragraph4 = document.createElement("p");
+ paragraph4.innerHTML = "Meat:";
+ var optionMeat = document.createElement("input");
+ optionMeat.setAttribute("class", "meatOption");
+ optionMeat.setAttribute("type", "checkbox");
+ optionMeat.setAttribute("checked", "true");
+ var meatLabel = document.createElement("label");
+ meatLabel.setAttribute("class", "meatOption");
+ meatLabel.innerHTML = "Bacon (Optional)";
+ document.body.appendChild(paragraph4);
+ document.body.appendChild(optionMeat);
+ document.body.appendChild(meatLabel);
+ 
+ var paragraph5 = document.createElement("p");
+ paragraph5.innerHTML = "Others:";
+ var optionOther1 = document.createElement("input");
+ optionOther1.setAttribute("class", "otherOption1");
+ optionOther1.setAttribute("type", "checkbox");
+ optionOther1.setAttribute("checked", "true");
+ var otherLabel1 = document.createElement("label");
+ otherLabel1.setAttribute("class", "otherOption1");
+ otherLabel1.innerHTML = "Cheese (Optional)";
+ var optionOther2 = document.createElement("input");
+ optionOther2.setAttribute("class", "otherOption2");
+ optionOther2.setAttribute("type", "checkbox");
+ optionOther2.setAttribute("checked", "true");
+ var otherLabel2 = document.createElement("label");
+ otherLabel2.setAttribute("class", "otherOption2");
+ otherLabel2.innerHTML = "Ketchup (Optional)";
+ var optionOther3 = document.createElement("input");
+ optionOther3.setAttribute("class", "otherOption3");
+ optionOther3.setAttribute("type", "checkbox");
+ optionOther3.setAttribute("checked", "true");
+ var otherLabel3 = document.createElement("label");
+ otherLabel3.setAttribute("class", "otherOption3");
+ otherLabel3.innerHTML = "Mayonnaise (Optional)";
+ document.body.appendChild(paragraph5);
+ document.body.appendChild(optionOther1);
+ document.body.appendChild(otherLabel1);
+ document.body.appendChild(optionOther2);
+ document.body.appendChild(otherLabel2);
+ document.body.appendChild(optionOther3);
+ document.body.appendChild(otherLabel3);
+ 
+ var paragraph6 = document.createElement("p");
+ paragraph6.innerHTML = "Extra:";
+ var optionExtra = document.createElement("input");
+ optionExtra.setAttribute("class", "extraOption");
+ optionExtra.setAttribute("type", "checkbox");
+ optionExtra.setAttribute("checked", "true");
+ var extraLabel = document.createElement("label");
+ extraLabel.setAttribute("class", "extraOption");
+ extraLabel.innerHTML = "With chips <br><br>";
+ document.body.appendChild(paragraph6);
+ document.body.appendChild(optionExtra);
+ document.body.appendChild(extraLabel);
+ 
+ var button = document.createElement("button");
+ button.innerHTML = "Save";
+ button.setAttribute("onclick", "saveInformation()");
+ document.body.appendChild(button);
+}
+
+function saveInformation() {
+ 
+ var heading = document.createElement("h1");
+ heading.innerHTML = "Hamburger";
+ var paragraph1 = document.createElement("p");
+ paragraph1.innerHTML = "Your selected ingredients that used to make Hamburger:";
+
+ var paragraph2 = document.createElement("p");
+ paragraph2.innerHTML = "Type of bun:";
+ var unordList1 = document.createElement("ul");
+ var list1 = document.createElement("li");
+ unordList1.appendChild(list1);
+ 
+ var isfirstBChecked = document.getElementsByClassName("bunOption1")[0].checked;
+ var issecondBChecked = document.getElementsByClassName("bunOption2")[0].checked;
+ var isthirdBChecked = document.getElementsByClassName("bunOption3")[0].checked;
+ if(isfirstBChecked == true) {
+     list1.innerHTML = document.getElementsByClassName("bunOption1")[1].innerHTML + " bun";
+ }
+ else if(issecondBChecked == true) {
+     list1.innerHTML = document.getElementsByClassName("bunOption2")[1].innerHTML + " bun";
+ }
+ else if(isthirdBChecked == true) {
+     list1.innerHTML = document.getElementsByClassName("bunOption3")[1].innerHTML + " bun";
+ } 
+ 
+ var paragraph3 = document.createElement("p");
+ paragraph3.innerHTML = "Vegetables:";
+ var unordList2 = document.createElement("ul");
+ var list2 = document.createElement("li");
+ var list3 = document.createElement("li");
+ var list4 = document.createElement("li");
+ 
+ var isfirstVChecked = document.getElementsByClassName("vegOption1")[0].checked;
+ var issecondVChecked = document.getElementsByClassName("vegOption2")[0].checked;
+ var isthirdVChecked = document.getElementsByClassName("vegOption3")[0].checked;
+ var listVItems = unordList2.children
+ var lengthV = listVItems.length;
+ if(lengthV == 0) {
+ if(isfirstVChecked == true && issecondVChecked == false && isthirdVChecked == false) {
+     list2.innerHTML = document.getElementsByClassName("vegOption1")[1].innerHTML;
+	 unordList2.appendChild(list2);
+ }
+ else if(issecondVChecked == true && isfirstVChecked == false && isthirdVChecked == false) {
+     list2.innerHTML = document.getElementsByClassName("vegOption2")[1].innerHTML;
+	 unordList2.appendChild(list2);
+ }
+ else if(isthirdVChecked == true && isfirstVChecked == false && issecondVChecked == false) {
+     list2.innerHTML = document.getElementsByClassName("vegOption3")[1].innerHTML;
+	 unordList2.appendChild(list2);
+ }
+ else if(isfirstVChecked == true && issecondVChecked == true && isthirdVChecked == false) {
+    list2.innerHTML = document.getElementsByClassName("vegOption1")[1].innerHTML;
+	list3.innerHTML = document.getElementsByClassName("vegOption2")[1].innerHTML;
+	unordList2.appendChild(list2);
+	unordList2.appendChild(list3);
+ }
+ else if(isfirstVChecked == true && isthirdVChecked == true && issecondVChecked == false) {
+    list2.innerHTML = document.getElementsByClassName("vegOption1")[1].innerHTML;
+	list3.innerHTML = document.getElementsByClassName("vegOption3")[1].innerHTML;
+	unordList2.appendChild(list2);
+	unordList2.appendChild(list3);
+ }
+ else if(issecondVChecked == true && isthirdVChecked == true && isfirstVChecked == false) {
+    list2.innerHTML = document.getElementsByClassName("vegOption2")[1].innerHTML;
+	list3.innerHTML = document.getElementsByClassName("vegOption3")[1].innerHTML;
+	unordList2.appendChild(list2);
+	unordList2.appendChild(list3);
+ }
+ else if(isfirstVChecked == true && issecondVChecked == true && isthirdVChecked == true) {
+    list2.innerHTML = document.getElementsByClassName("vegOption1")[1].innerHTML;
+	list3.innerHTML = document.getElementsByClassName("vegOption2")[1].innerHTML;
+	list4.innerHTML = document.getElementsByClassName("vegOption3")[1].innerHTML;
+	unordList2.appendChild(list2);
+	unordList2.appendChild(list3);
+	unordList2.appendChild(list4);
+  }
+  else {
+    paragraph3.innerHTML += " (none have been selected)";
+	}
+ }
+ else {
+ while(lengthV > 0) {
+     listVItems[0].remove();
+     lengthV--;
+  }
+ }
+ var paragraph4 = document.createElement("p");
+ paragraph4.innerHTML = "Meat:";
+ var unordList3 = document.createElement("ul");
+ var list5 = document.createElement("li");
+ list5.innerHTML = "Beef";
+ unordList3.appendChild(list5);
+ var list6 = document.createElement("li");
+
+ var isfirstMChecked = document.getElementsByClassName("meatOption")[0].checked; 
+ 
+ var listMItems = unordList3.children
+ var lengthM = listMItems.length;
+ if(lengthM == 1) {
+   if(isfirstMChecked == true) {
+    list6.innerHTML = document.getElementsByClassName("meatOption")[1].innerHTML;
+	unordList3.appendChild(list6);
+   }
+   else {
+    paragraph4.innerHTML += " (none have been selected. Beef is compulsory)";
+   }
+   }
+   else {
+    while(lengthM > 1) {
+     listMItems[1].remove();
+     lengthM--;
+  }
+ }
+ 
+ var paragraph5 = document.createElement("p");
+ paragraph5.innerHTML = "Others:";
+ var unordList4 = document.createElement("ul");
+ var list7 = document.createElement("li");
+ var list8 = document.createElement("li");
+ var list9 = document.createElement("li");
+ 
+ var isfirstOChecked = document.getElementsByClassName("otherOption1")[0].checked;
+ var issecondOChecked = document.getElementsByClassName("otherOption2")[0].checked;
+ var isthirdOChecked = document.getElementsByClassName("otherOption3")[0].checked;
+ var listOItems = unordList4.children
+ var lengthO = listOItems.length;
+ if(lengthO == 0) {
+ if(isfirstOChecked == true && issecondOChecked == false && isthirdOChecked == false) {
+     list7.innerHTML = document.getElementsByClassName("otherOption1")[1].innerHTML;
+	 unordList4.appendChild(list7);
+ }
+ else if(issecondOChecked == true && isfirstOChecked == false && isthirdOChecked == false) {
+     list7.innerHTML = document.getElementsByClassName("otherOption2")[1].innerHTML;
+	 unordList4.appendChild(list7);
+ }
+ else if(isthirdOChecked == true && isfirstOChecked == false && issecondOChecked == false) {
+     list7.innerHTML = document.getElementsByClassName("otherOption3")[1].innerHTML;
+	 unordList4.appendChild(list7);
+ }
+ else if(isfirstOChecked == true && issecondOChecked == true && isthirdOChecked == false) {
+    list7.innerHTML = document.getElementsByClassName("otherOption1")[1].innerHTML;
+	list8.innerHTML = document.getElementsByClassName("otherOption2")[1].innerHTML;
+	unordList4.appendChild(list7);
+	unordList4.appendChild(list8);
+ }
+ else if(isfirstOChecked == true && isthirdOChecked == true && issecondOChecked == false) {
+    list7.innerHTML = document.getElementsByClassName("otherOption1")[1].innerHTML;
+	list8.innerHTML = document.getElementsByClassName("otherOption3")[1].innerHTML;
+	unordList4.appendChild(list7);
+	unordList4.appendChild(list8);
+ }
+ else if(issecondOChecked == true && isthirdOChecked == true && isfirstOChecked == false) {
+    list7.innerHTML = document.getElementsByClassName("otherOption2")[1].innerHTML;
+	list8.innerHTML = document.getElementsByClassName("otherOption3")[1].innerHTML;
+	unordList4.appendChild(list7);
+	unordList4.appendChild(list8);
+ }
+ else if(isfirstOChecked == true && issecondOChecked == true && isthirdOChecked == true) {
+    list7.innerHTML = document.getElementsByClassName("otherOption1")[1].innerHTML;
+	list8.innerHTML = document.getElementsByClassName("otherOption2")[1].innerHTML;
+	list9.innerHTML = document.getElementsByClassName("otherOption3")[1].innerHTML;
+	unordList4.appendChild(list7);
+	unordList4.appendChild(list8);
+	unordList4.appendChild(list9);
+  }
+  else {
+    paragraph5.innerHTML += " (none have been selected)";
+	}
+ }
+ else {
+ while(lengthO > 0) {
+     listOItems[0].remove();
+     lengthO--;
+  }
+ }
+ 
+ var paragraph6 = document.createElement("p");
+ paragraph6.innerHTML = "Extras:";
+ var unordList5 = document.createElement("ul");
+ var list10 = document.createElement("li");
+ 
+
+ var isfirstEChecked = document.getElementsByClassName("extraOption")[0].checked; 
+ 
+ var listEItems = unordList5.children
+ var lengthE = listEItems.length;
+ if(lengthE == 0) {
+   if(isfirstEChecked == true) {
+    list10.innerHTML = document.getElementsByClassName("extraOption")[1].innerHTML;
+	unordList5.appendChild(list10);
+   }
+   else {
+    paragraph6.innerHTML += " (none have been selected)";
+   }
+   }
+   else {
+    while(lengthE > 0) {
+     listEItems[0].remove();
+     lengthE--;
+  }
+ }
+   
+  
+  
+ var elements = document.body.children;
+ var numberElements = elements.length;
+ while(numberElements > 0) {
+    elements[0].remove();
+	numberElements--;
+ }
+ document.body.appendChild(heading);
+ document.body.appendChild(paragraph1);
+ document.body.appendChild(paragraph2);
+ document.body.appendChild(unordList1);
+ document.body.appendChild(paragraph3);
+ document.body.appendChild(unordList2);
+ document.body.appendChild(paragraph4);
+ document.body.appendChild(unordList3);
+ document.body.appendChild(paragraph5);
+ document.body.appendChild(unordList4);
+ document.body.appendChild(paragraph6);
+ document.body.appendChild(unordList5);
+ 
+ var aButton = document.createElement("button");
+ aButton.innerHTML = "Customise";
+ aButton.setAttribute("onclick", "hideInformation()");
+ 
+ var ordersLabel = document.createElement("label");
+ ordersLabel.innerHTML = "<br><br>Number of orders ";
+ 
+ var textArea = document.createElement("input");
+  textArea.setAttribute("type", "text");
+  textArea.setAttribute("name", "numberOrders");
+  var subButton = document.createElement("input");
+  subButton.setAttribute("type", "submit");
+  subButton.setAttribute("value", "Submit order/s");
+  
+  document.body.appendChild(aButton);
+  document.body.appendChild(ordersLabel);
+  document.body.appendChild(textArea);
+  document.body.appendChild(subButton);
+  
+}
+</script>
+</head>
+
+<body>
+<h1>Hamburger</h1>
+<p>Ingredients that used to make Hamburger:</p>
+<p>Type of bun:</p>
+<ul>
+<li>Sesame seeds bun</li>
+</ul>
+<p>Vegetables:</p>
+<ul>
+<li>Lettuce</li><label>(Optional but has been included temporarily)</label>
+<li>Tomatoes</li><label>(Optional but has been included temporarily)</label>
+<li>Onions</li><label>(Optional but has been included temporarily)</label>
+</ul>
+<p>Meat:</p>
+<ul>
+<li>Beef</li>
+<li>Bacon</li><label>(Optional but has been included temporarily)</label>
+</ul>
+<p>Others:</p>
+<ul>
+<li>Cheese</li><label>(Optional but has been included temporarily)</label>
+<li>Ketchup</li><label>(Optional but has been included temporarily)</label>
+<li>Mayonnaise</li><label>(Optional but has been included temporarily)</label>
+</ul>
+<p>Extras:</p>
+<ul><li>With chips</li><label>(Optional but has been included temporarily)</label></ul>
+<br><br>
+
+<button onclick="hideInformation()">Customise</button><br><br>
+<label>Number of orders</label>
+<input type="text" name="numberOrders"/>
+<input type="submit" value="Submit order/s"/>
+</ul>
+</body>
+</html>

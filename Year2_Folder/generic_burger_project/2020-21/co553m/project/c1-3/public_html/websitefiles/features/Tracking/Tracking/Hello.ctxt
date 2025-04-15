@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Hello
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Track\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=str
+comment1.target=void\ checkmealstatus(java.lang.String[])
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3
